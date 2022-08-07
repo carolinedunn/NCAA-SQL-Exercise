@@ -20,7 +20,7 @@ We'll evaluate the top percentages in 500 game
 * At least ten free throws attempted by the team in a game
 * At least five 3-pointers attempted by the team in a game
 
-## Pre-Requisites
+## Prerequisites
 1. Sign-in or Sign-up for a Google Cloud account.  
 Since we're using Google Cloud's Big Query, you'll need to sign up for a Google Cloud account. If you don't already have a Google Cloud account, go to [Big Query](https://cloud.google.com/bigquery), and click "Try Big Query free"
 
@@ -32,10 +32,48 @@ Since we're using Google Cloud's Big Query, you'll need to sign up for a Google 
 3. Enter and Select "bigquery" in the search console 
 ![Project screenshot]()
 
-## Enter and Run your Free Throw query
+## Enter and Run your Top 500 Free Throw Games query
 4. Once you enter the BigQuery product, you should default to SQL workplace and a default Editor should appear.
 5. Copy and paste the SQL code [bestfreethrowpercentages.sql]() into the Editor
-![Editorscreenshot]
+![freethrowEditorscreenshot]()
+### Free Throw SQL Code Review
+Taking a quick look at the code, you'll notice:
+* We created columns to view the following:
+   * Free Throws Attempted
+   * Free Throws Made
+   * Free Throws Percent
+   * Did the team win?
+* We filtered out for opposing teams that also made 100% of their free throws (unlikely, but we wanted to remove anomalies) 
+* We filtered out all games where the team had less than 10 free throw attempts
+* We sorted by highest percent of free throws made
+* The table only shows the top 500 games of the highest free throw percentage
+
 6. Click "Run" 
-You'll see a table of results appear at the bottom of the screen.
-![resultsscreenshot]
+You'll see a table of results appear at the bottom of the screen. Now let's take a look at the data, you should see the first 50 rows of data, games with the highest percent free throws
+![freethrowresultsscreenshot]()
+You might notice that the first 50 rows have 100% free throw percentage made. Wow that's pretty good! But then look at the "win" column and you'll find that they didn't automatically win the games.
+7. Let's export the data to take a closer look. I chose .CSV, but you're welcome to choose the method that is most comfortable for you.
+![saveresultsscreenshot]()
+8. Let's count how many games of the 500 highest free throws made percentage were won. I used the COUNTIF function (you can use any method you'd like). I counted 306 games or 61% of games were won where the team had the highest percent of free throws.
+9. Next, let's repeat the process for 3-pointers
+
+## Enter and Run your Top 500 3-pointer Games query
+4. In the Editor, Select all SQL code and replace with the [bestthreepointerspercentages.sql]() SQL code.
+![threepointersEditorscreenshot]()
+### 3-Pointer SQL Code Review
+Taking a quick look at the code, you'll notice:
+* We created columns to view the following:
+   * 3-Pointers Attempted
+   * 3-Pointers Made
+   * 3-Pointers Made Percent
+   * Did the team win?
+* We filtered out all games where the team had less than 5 3-pointer attempts
+* We sorted by highest percent of 3-pointers made
+* The table only shows the top 500 games of the highest 3-pointers made percentage
+
+6. Click "Run" 
+You'll see a table of results appear at the bottom of the screen. Now let's take a look at the data, you should see the first 50 rows of data, games with the highest percent 3-pointers
+![resultsscreenshot]()
+
+7. Let's export the data to take a closer look. I chose .CSV(local file), but you're welcome to choose the method that works best for you.
+8. Let's count how many games of the 500 highest 3-pointers made percentage were won. I used the COUNTIF function (you can use any method you'd like). I counted 
