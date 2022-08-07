@@ -34,7 +34,7 @@ Since we're using Google Cloud's Big Query, you'll need to sign up for a Google 
 
 ## Enter and Run your Top 500 Free Throw Games query
 4. Once you enter the BigQuery product, you should default to SQL workplace and a default Editor should appear.
-5. Copy and paste the SQL code [bestfreethrowpercentages.sql]() into the Editor
+5. Copy and paste the SQL code [bestfreethrowpercentages.sql](https://github.com/carolinedunn/NCAA-SQL-Exercise/blob/main/bestfreethrowpercentages.sql) into the Editor
 ![freethrowEditorscreenshot]()
 ### Free Throw SQL Code Review
 Taking a quick look at the code, you'll notice:
