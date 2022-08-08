@@ -1,7 +1,7 @@
 # NCAA-SQL-Exercise
-Is it more important to hit free throws or 3-pointers to win NCAA basketball games?  
+**Is your team more likely to win a game hitting free throws or 3-pointers in NCAA basketball?**  
 
-In this SQL exercise, we will explore NCAA games between 2013 and 2018 to statistically determine if hitting free throws or 3-pointers is more important in winning NCAA basketball games.
+In this SQL exercise, we will explore NCAA games between 2013 and 2018 to statistically determine if hitting free throws or 3-pointers is more important to winning NCAA basketball games.
 
 <img src="https://github.com/carolinedunn/NCAA-SQL-Exercise/blob/main/images/threepointersorfreethrows.png" width="600">
 
