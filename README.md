@@ -1,5 +1,5 @@
 # NCAA-SQL-Exercise
-It is more important to hit free throws or 3-pointers to win NCAA basketball games?  
+Is it more important to hit free throws or 3-pointers to win NCAA basketball games?  
 
 In this SQL exercise, we will explore NCAA games between 2013 and 2018 to statistically determine if hitting free throws or 3-pointers is more important in winning NCAA basketball games.  
 
@@ -9,7 +9,7 @@ In October 2018, the NCAA published the article titled, [The 3-pointer really do
 We will use [Google Cloud's Big Query product](https://cloud.google.com/bigquery) and their [NCAA Basketball dataset](https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=ncaa_basketball&page=dataset) to quickly evaluate thousands of basketball game stats and come to an analytical conclusion.  
 
 ## Methodology
-We'll review wins and losses highest percentage of 3-point scoring games vs. highest percentage of made free throws in NCAA games. When we first pulled the data, there were a few games where only two free throws or one 3-pointer was attempted.  
+We'll review wins and losses of the highest percentage of 3-point scoring games vs. highest percentage of made free throws in NCAA games. When we first pulled the data, there were a few games where only two free throws or one 3-pointer was attempted.  
 
 ### Number of Games
 We'll evaluate the top percentages in 500 game
@@ -48,7 +48,7 @@ Taking a quick look at the code, you'll notice:
 * We filtered out for opposing teams that also made 100% of their free throws (unlikely, but we wanted to remove anomalies). 
 * We filtered out all games where the team had less than 10 free throw attempts.
 * We sorted by highest percent of free throws made.
-* The table only shows the top 500 games of the highest free throw percentage.
+* The table only includes the top 500 games of the highest free throw percentage.
 
 6. Click "Run" 
 You'll see a table of results appear at the bottom of the screen. Now let's take a look at the data, you should see the first 50 rows of data, games with the highest percent free throws.
@@ -79,7 +79,7 @@ Taking a quick look at the code, you'll notice:
    * Did the team win?
 * We filtered out all games where the team had less than five 3-pointer attempts
 * We sorted by highest percent of 3-pointers made
-* The table only shows the top 500 games of the highest 3-pointers made percentage
+* The table only includes the top 500 games of the highest 3-pointers made percentage
 
 10. Click "Run" 
 You'll see a table of results appear at the bottom of the screen. Now let's take a look at the data, you should see the first 50 rows of data, games with the highest percent 3-pointers
@@ -107,5 +107,5 @@ From 2017-2019, I attended 34 out of 39 Georgia Tech Men's Basketball home games
 
 <img src="https://github.com/carolinedunn/NCAA-SQL-Exercise/blob/main/images/9-loyaltymatters.png" width="600">
 
-Since then I started attending Georgia Tech Women's Basketball games and watched their jouney to the [NCAA Sweet Sixteen in 2021](https://ramblinwreck.com/jackets-meet-south-carolina-in-sweet-16-sunday/).
+Since then I started attending Georgia Tech Women's Basketball games and watched their journey to the [NCAA Sweet Sixteen in 2021](https://ramblinwreck.com/jackets-meet-south-carolina-in-sweet-16-sunday/).
 
