@@ -1,7 +1,9 @@
 # NCAA-SQL-Exercise
 Is it more important to hit free throws or 3-pointers to win NCAA basketball games?  
 
-In this SQL exercise, we will explore NCAA games between 2013 and 2018 to statistically determine if hitting free throws or 3-pointers is more important in winning NCAA basketball games.  
+In this SQL exercise, we will explore NCAA games between 2013 and 2018 to statistically determine if hitting free throws or 3-pointers is more important in winning NCAA basketball games.
+
+<img src="https://github.com/carolinedunn/NCAA-SQL-Exercise/blob/main/images/threepointersorfreethrows.png" width="600">
 
 ## The NCAA has taken both sides of this argument
 In October 2018, the NCAA published the article titled, [The 3-pointer really does help you win NCAA games](https://www.ncaa.com/news/basketball-men/article/2018-10-30/36-million-shots-dont-lie-3-pointer-really-does-help-you-win). Then 2 months later (December 2018), the NCAA published, [Why the free throw is the most important shot in college basketball](https://www.ncaa.com/news/basketball-men/article/2018-12-12/why-free-throw-most-important-shot-college-basketball). 
@@ -12,7 +14,7 @@ We will use [Google Cloud's Big Query product](https://cloud.google.com/bigquery
 We'll review wins and losses of the highest percentage of 3-point scoring games vs. highest percentage of made free throws in NCAA games. When we first pulled the data, there were a few games where only two free throws or one 3-pointer was attempted.  
 
 ### Number of Games
-We'll evaluate the top percentages in 500 game
+We'll evaluate the success percentages in the top 500 games
 * Top 500 games of percent successful free throws
 * Top 500 games of percent successful 3-pointers
 
