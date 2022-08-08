@@ -101,7 +101,7 @@ I used the COUNTIF function (you can use any method you'd like). I counted 440 o
 
 Therefore, teams who make a higher percentage of making **3-pointers are more likely to win** than a team that makes all of their free throws. 
 
-In reality, this issue is significantly more complext than statistically analyzing free throws vs. 3-pointers. For example, a team in the lead will get a lot more free throw attempts as the losing team will foul to get possession of the ball.
+In reality, this issue is significantly more complex than statistically analyzing free throws vs. 3-pointers. For example, a team in the lead will get a lot more free throw attempts as the losing team will foul to get possession of the ball.
 
 ## What's my connection?
 
